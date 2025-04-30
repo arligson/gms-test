@@ -17,5 +17,8 @@
 import './commands'
 
 beforeEach(() => {
-    cy.visit('/');
-  });
+  cy.visit('/')
+})
+afterEach(() => {
+  cy.screenshot()
+})
